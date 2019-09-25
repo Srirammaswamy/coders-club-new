@@ -10,8 +10,27 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!-- <link rel="stylesheet" href="css/sketch-bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/spacelab-bootstrap.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Mansalva&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Fresca|Gloria+Hallelujah|Mansalva&display=swap" rel="stylesheet">
 
     <style>
+        p
+        {
+            font-family: 'Fresca', sans-serif !important;
+            font-size:1.2em;
+            letter-spacing:1.4px;
+        }  
+        .gloria{
+            font-family: 'Gloria Hallelujah', cursive;
+        }
+        .mansalva
+        {
+            font-family: 'Mansalva', cursive;
+        }
+        .fredoka
+        {
+            font-family: 'Fredoka One', cursive;
+        }
         body
         {
             background-color:white;
@@ -19,7 +38,7 @@
         .main {
             /* margin: 10px; */
             /* display: flex; */
-            margin-top:-30px;
+            margin-top:-33px;
         
         }
 
@@ -35,8 +54,8 @@
       <br>
       <div class="main">
             <nav class="navbar navbar-expand-lg" style="width:100%;margin-top:10px;height:70px;background-color:black;color:white !important;width:100%;">
-                    <a class="navbar-brand" href="#" style="font-size:2em;color:yellow;">Coders Club</a>
-                    <button style="background-color:white;" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    <a class="navbar-brand gloria" href="#" style="font-size:2em;color:yellow;">Coders Club</a>
+                    <button style="background-color:white;border:2px solid white;border-radius:15px;" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -44,14 +63,14 @@
                         <div style="width:100%;float:right;">
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="float:right;">
                                 <li class="nav-item active">
-                                    <a class="nav-link" style="font-size:1.3em;color:white;" href="#">Home <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link fredoka" style="font-size:1.3em;color:white;" href="#">Home <span class="sr-only">(current)</span></a>
                                 </li>
         
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#about" style="font-size:1.3em;color:white;">About</a>
+                                    <a class="nav-link fredoka" href="#about" style="font-size:1.3em;color:white;">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#contests" class="nav-link" style="font-size:1.3em;color:white;">Contests</a>
+                                    <a href="#contests" class="nav-link fredoka" style="font-size:1.3em;color:white;">Contests</a>
                                 </li>                        
                             </ul>
                         </div>    
@@ -71,18 +90,34 @@
                     </div>
                 </nav>
       
-          <div class="jumbotron" style="background-color:indigo;color:white;text-transform:uppercase;text-align:center">
-              <h1 class="display-3" style="color:white !important;" >Coders Club</h1>
-              <p class="lead">By Department of CSE</p>
-              <hr class="my-2">
-              <p>More info</p>
-              <p class="lead">
-                  <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Go to Challenge</a>
-              </p>
+          <div class="jumbotron" style="background:url('resources/firstback.jpg');background-position:right;color:white;text-transform:uppercase;text-align:center">
+              <h1  class="mansalva display-3" style="margin-top:-10px;color:white !important;" >Coders Club</h1>
+              <div class="row" style="height:100%">
+                  <div class="col-lg-4 col-md-12">
+                        <p class="lead fredoka" style="margin-top:100px;font-size:1.8em;text-transform:uppercase;">Department of CSE</p>
+                  </div>
+
+                  <div class="col-lg-4 col-md-12">
+                        <img src="resources/logo.png" alt="Image not found" width="100%" height="100%">
+                  </div>
+
+                  <div class="col-lg-4 col-md-12">
+                        <hr class="my-2">
+                        <p  class="fredoka" style="margin-top:75px;">More info</p>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Go to Challenge</a>
+                        </p>
+
+                  </div>
+
+              </div>
+              
+             
+             
           </div>
 
           
-          <div id="carousel" class="carousel slide" data-ride="carousel" style="width:80%;margin:50px auto;">
+          <div id="carousel" class="carousel slide" data-ride="carousel" style="width:90%;margin:50px auto;">
               <ol class="carousel-indicators">
                   <li data-target="#carousel" data-slide-to="0" class="active"></li>
                   <li data-target="#carousel" data-slide-to="1"></li>
@@ -111,54 +146,75 @@
           </div>
 
           <br><br>
-          <h2  id="about" style="color:goldenrod;text-align:center;font-weight:bold;text-transform: uppercase">About</h2>
+          <h2  id="about" style="margin-top:-30px;color:goldenrod;text-align:center;font-weight:bold;text-transform: uppercase">About</h2>
           <div style="margin-bottom:15px;background-color: black;color:white;padding:30px;width:98%;margin: 15px auto;">
             
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, laboriosam! Minima animi eius a voluptas, illum accusamus blanditiis quidem esse. Ipsum necessitatibus dignissimos quae adipisci in harum inventore impedit hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ducimus nesciunt excepturi labore exercitationem neque enim iure sint voluptatem inventore, vero numquam odit, accusamus quam magni, earum delectus aut? Expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus assumenda fugit autem mollitia vel odio tempora enim consequatur hic excepturi quis, explicabo accusamus recusandae, eveniet repellendus, cumque error? Nulla, impedit!</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, laboriosam! Minima animi eius a voluptas, illum accusamus blanditiis quidem esse. Ipsum necessitatibus dignissimos quae adipisci in harum inventore impedit hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ducimus nesciunt excepturi labore exercitationem neque enim iure sint voluptatem inventore, vero numquam odit, accusamus quam magni, earum delectus aut? Expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus assumenda fugit autem mollitia vel odio tempora enim consequatur hic excepturi quis, explicabo accusamus recusandae, eveniet repellendus, cumque error? Nulla, impedit!</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, laboriosam! Minima animi eius a voluptas, illum accusamus blanditiis quidem esse. Ipsum necessitatibus dignissimos quae adipisci in harum inventore impedit hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ducimus nesciunt excepturi labore exercitationem neque enim iure sint voluptatem inventore, vero numquam odit, accusamus quam magni, earum delectus aut? Expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus assumenda fugit autem mollitia vel odio tempora enim consequatur hic excepturi quis, explicabo accusamus recusandae, eveniet repellendus, cumque error? Nulla, impedit!</p>
-            
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, laboriosam! Minima animi eius a voluptas, illum accusamus blanditiis quidem esse. Ipsum necessitatibus dignissimos quae adipisci in harum inventore impedit hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi ducimus nesciunt excepturi labore exercitationem neque enim iure sint voluptatem inventore, vero numquam odit, accusamus quam magni, earum delectus aut? Expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus assumenda fugit autem mollitia vel odio tempora enim consequatur hic excepturi quis, explicabo accusamus recusandae, eveniet repellendus, cumque error? Nulla, impedit!</p>
-            <br>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque nobis ab ducimus, deleniti debitis corporis iure quos libero quidem dolorem tenetur, sint repellat ipsum sequi aliquid necessitatibus, suscipit cumque quae.</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum delectus, magnam dolor aliquid exercitationem quam, quo commodi aperiam minima quia dignissimos repellendus inventore. Reiciendis, non. Voluptate quidem deserunt omnis nam.</p>
-            <br><br><br>
+            <h4 style="color:steelblue;font-size:1.3em;">About</h4>
+            <p>
+                In a culture where everything is mediated through computers, it becomes mandatory to be literate in the 
+                ways that technology works. One way through which this can be achieved is by practicing programming.Coders Club aims 
+                to establish this programming culture on TCE campus, reaching every student who are passionate about coding.
+                 It also aims at building good programmers with great programming habits. The club’s motto is to Think-Code-Repeat.
+            </p>
+
+            <h4 style="color:steelblue;">Motivation for the Club</h4>
+            <p>
+                    The seed of the club was shown by the Head of the Department with an objective of improving the core 
+                    placements of CSE students. It was then equipped by the final year students under the guidance of faculty 
+                    memberswho wanted to contribute their knowledge for the benefit of upcoming students and allow them to explore 
+                    the world of computer science. They are driven by their passion for coding and hunger to learn.                
+            </p>
+            <h4 style="color:steelblue;">Objectives</h4>
+                <p>
+                    1.	To teach basics of programming as well as competitive programming to the students<br>
+                    2.	To inculcate competitive coding practice and to encourage competitive programming participation in the events like ACM ICPC, CodeChef challenges.<br>
+                    3.	To increase the number of students in leaderboard of coding sites like Hackerearth, Hackerrank.<br>
+                    4.	To conduct regular coding challenges within the college.<br>
+                </p>
+
+            <h4 style="color:steelblue;">Monthly Activities</h4>
+                <p>    
+                    ●	To conduct club meeting twice a month andsolve selective challenging problems in the coding sites/contest.<br>
+                    ●	To host new problems in the web page which has to be solved within next meeting.<br>
+                    ●	Invite Alumni and discuss the challenges in competitive programming contests through workshops.<br>                        
+                </p><br><br>        
         </div>
-        <h2 id="contests" style="color:green;margin-top:8px;text-align:center;font-weight:bold;text-transform: uppercase;">Contests</h2>
+        <h2 id="contests" style="color:green;margin-top:30px;text-align:center;font-weight:bold;text-transform: uppercase;">Contests</h2>
         <div class="jumbotron" style="width:98%;margin:15px auto;padding:15px;background-color:dodgerblue;height:100%;min-height:500px">
             <div class="row" style="height:100%;padding:15px;">
-                <div class="col-md-4 col-sm-12" style="min-height:450px;margin-bottom:10px;">                                
-                        <div class="card" style="width:100%;height:100%">
-                                <img src="..." class="card-img-top" alt="...">
+                <div class="col-lg-4 col-md-12" style="min-height:450px;margin-bottom:10px;">                                
+                        <div class="card" style="width:100%;height:fit-content">
+                                <img src="resources/hl.png" class="card-img-top" alt="..." width="30%" height="30%" style="margin:0 auto">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <h5 class="card-title fredoka" style="color:black;text-align:center;">HourRank 31</h5>
+                                  <p class="card-text">Join our 60 minutes coding challenge, HourRank 30, where the fastest coder wins!
+
+                                        On December 2nd, at 7:00am PST, 3:00pm UTC, 8:30pm IST, you'll have 60 minutes to solve 3 challenges. The top 10 coders win HackerRank t-shirt.</p>
+                                  <a href="#" class="btn btn-primary">Click here</a>
                                 </div>
                         </div>                                  
                 </div>    
                 <div class="col-lg-4 col-md-12" style="margin-bottom:10px;">                                
-                        <div class="card" style="width:100%;height:100%">
-                                <img src="..." class="card-img-top" alt="...">
+                        <div class="card" style="width:100%;height:fit-content">
+                                <img src="resources/hl.png" class="card-img-top" alt="..." width="30%" height="30%" style="margin:0 auto">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <h5 class="card-title fredoka" style="color:black;text-align:center;">CodeAgon</h5>
+                                  <p class="card-text">Join Codeagon and see how your coding skills compare against others! You’ll have 4 hours to solve algorithm challenges. Top 20 win 2 Lakhs in cash prizes. Top performing coders will win the opportunity to meet the CodeNation engineering team and interview for job opportunities. See you on the leaderboard!</p>
+                                  <a href="#" class="btn btn-primary">Click here</a>
                                 </div>
                         </div>                                  
                 </div>    
                 <div class="col-lg-4 col-md-12" style="margin-bottom:10px;">                                
-                        <div class="card" style="width:100%;height:100%">
-                                <img src="..." class="card-img-top" alt="...">
+                        <div class="card" style="width:100%;height:fit-content">
+                                <img src="resources/hl.png" class="card-img-top" alt="..." width="30%" height="30%" style="margin:0 auto">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                  <h5 class="card-title fredoka" style="color:black;text-align:center;">HourRank 14</h5>
+                                  <p class="card-text">Join our 60 minutes coding challenge, HourRank 14, where the fastest coder wins!
+
+                                        On December 2nd, at 7:00am PST, 3:00pm UTC, 8:30pm IST, you'll have 60 minutes to solve 3 challenges. The top 10 coders win HackerRank t-shirt.</p>
+                                  <a href="#" class="btn btn-primary">Click here</a>
                                 </div>
-                        </div>                                  
+                        </div>                            
                 </div>    
             </div>
 
