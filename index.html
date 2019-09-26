@@ -47,13 +47,27 @@
             height: 500px;
             /* width: 500px; */
         }
+        /* width */
+
+        ::-webkit-scrollbar {
+            width: 1px;
+        }
+
 
     </style>
   </head>
   <body>
       <br>
       <div class="main">
-            <nav class="navbar navbar-expand-lg" style="width:100%;margin-top:10px;height:70px;background-color:black;color:white !important;width:100%;">
+            <nav class="" style="width:100%;margin-top:10px;height:fit-content;background-color:maroon;color:white !important;width:100%;">
+                  <div class="mansalva row" style="text-align:center;font-size: 5em;" >
+                    <div class="col-12">Coders Club</div>
+                  </div><br>
+                  <div class="row" style="margin-top:-30px;text-align: center;font-size:2em;">
+                    <div class="col-12">(Thiagarajar College of Engineering,Madurai-625015)</div>
+                  </div>
+              </nav>
+                <nav class="navbar navbar-expand-lg" style="width:100%;margin-top:0px;height:70px;background-color:black;color:white !important;width:100%;">
                     <a class="navbar-brand gloria" href="#" style="font-size:2em;color:yellow;">Coders Club</a>
                     <button style="background-color:white;border:2px solid white;border-radius:15px;" class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -69,9 +83,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link fredoka" href="#about" style="font-size:1.3em;color:white;">About</a>
                                 </li>
-                                <li class="nav-item">
+                              <!--   <li class="nav-item">
                                     <a href="#contests" class="nav-link fredoka" style="font-size:1.3em;color:white;">Contests</a>
-                                </li>                        
+                                </li>  -->                       
                             </ul>
                         </div>    
                     </div>       
@@ -88,51 +102,26 @@
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form> -->
                     </div>
-                </nav>
-      
-          <div class="jumbotron" style="background:url('resources/firstback.jpg');background-position:right;color:white;text-transform:uppercase;text-align:center">
-              <h1  class="mansalva display-3" style="margin-top:-10px;color:white !important;" >Coders Club</h1>
-              <div class="row" style="height:100%">
-                  <div class="col-lg-4 col-md-12">
-                        <p class="lead fredoka" style="margin-top:100px;font-size:1.8em;text-transform:uppercase;">Department of CSE</p>
-                  </div>
-
-                  <div class="col-lg-4 col-md-12">
-                        <img src="resources/logo.png" alt="Image not found" width="100%" height="100%">
-                  </div>
-
-                  <div class="col-lg-4 col-md-12">
-                        <hr class="my-2">
-                        <p  class="fredoka" style="margin-top:75px;">More info</p>
-                        <p class="lead">
-                            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Go to Challenge</a>
-                        </p>
-
-                  </div>
-
-              </div>
-              
-             
-             
-          </div>
+                </nav>    
+                      
 
           
-          <div id="carousel" class="carousel slide" data-ride="carousel" style="width:90%;margin:50px auto;">
+          <div   id="carousel" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
                   <li data-target="#carousel" data-slide-to="0" class="active"></li>
                   <li data-target="#carousel" data-slide-to="1"></li>
                   <li data-target="#carousel" data-slide-to="2"></li>
               </ol>
               <br>
-              <div class="carousel-inner" role="listbox">
+              <div class="carousel-inner" role="listbox" style="width:95%;height:100%;margin:10px auto;box-shadow: 5px 7px 8px grey;">
                   <div class="carousel-item active">
-                      <img class="cimg" src="resources/cc.jpeg" data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide" width="100%">
+                      <img class="cimg" src="resources/tce2.jpg" data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide" width="100%">
                   </div>
                   <div class="carousel-item">
-                      <img class="cimg" src="resources/code.jpeg" data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide" width="100%">
+                      <img class="cimg" src="https://www.tce.edu/sites/default/files/Slider-2019.jpeg" data-src="holder.js/900x500/auto/#666:#444/text:Second slide" alt="Second slide" width="100%">
                   </div>
                   <div class="carousel-item">
-                      <img class="cimg" src="resources/cc2.jpeg" data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide" width="100%">
+                      <img class="cimg" src="resources/tce3.jpg" data-src="holder.js/900x500/auto/#666:#444/text:Third slide" alt="Third slide" width="100%">
                   </div>
               </div>
               <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -143,48 +132,21 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
               </a>
-          </div>
+          </div>        
 
           <br><br>
-          <h2  id="about" style="margin-top:-30px;color:goldenrod;text-align:center;font-weight:bold;text-transform: uppercase">About</h2>
-          <div style="margin-bottom:15px;background-color: black;color:white;padding:30px;width:98%;margin: 15px auto;">
-            
-            <h4 style="color:steelblue;font-size:1.3em;">About</h4>
-            <p>
-                In a culture where everything is mediated through computers, it becomes mandatory to be literate in the 
-                ways that technology works. One way through which this can be achieved is by practicing programming.Coders Club aims 
-                to establish this programming culture on TCE campus, reaching every student who are passionate about coding.
-                 It also aims at building good programmers with great programming habits. The club’s motto is to Think-Code-Repeat.
-            </p>
 
-            <h4 style="color:steelblue;">Motivation for the Club</h4>
-            <p>
-                    The seed of the club was shown by the Head of the Department with an objective of improving the core 
-                    placements of CSE students. It was then equipped by the final year students under the guidance of faculty 
-                    memberswho wanted to contribute their knowledge for the benefit of upcoming students and allow them to explore 
-                    the world of computer science. They are driven by their passion for coding and hunger to learn.                
-            </p>
-            <h4 style="color:steelblue;">Objectives</h4>
-                <p>
-                    1.	To teach basics of programming as well as competitive programming to the students<br>
-                    2.	To inculcate competitive coding practice and to encourage competitive programming participation in the events like ACM ICPC, CodeChef challenges.<br>
-                    3.	To increase the number of students in leaderboard of coding sites like Hackerearth, Hackerrank.<br>
-                    4.	To conduct regular coding challenges within the college.<br>
-                </p>
 
-            <h4 style="color:steelblue;">Monthly Activities</h4>
-                <p>    
-                    ●	To conduct club meeting twice a month andsolve selective challenging problems in the coding sites/contest.<br>
-                    ●	To host new problems in the web page which has to be solved within next meeting.<br>
-                    ●	Invite Alumni and discuss the challenges in competitive programming contests through workshops.<br>                        
-                </p><br><br>        
-        </div>
-        <h2 id="contests" style="color:green;margin-top:30px;text-align:center;font-weight:bold;text-transform: uppercase;">Contests</h2>
-        <div class="jumbotron" style="width:98%;margin:15px auto;padding:15px;background-color:dodgerblue;height:100%;min-height:500px">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-12 scroll" >
+            <h2 id="contests" style="color:green;margin-top:0px;text-align:center;font-weight:bold;text-transform:uppercase;">Contests</h2>
+            <div style="overflow:scroll;max-height:500px;">   
+        <div class="jumbotron" style="width:98%;margin:15px auto;padding:15px;background-color:maroon;height:fit-content;">
             <div class="row" style="height:100%;padding:15px;">
-                <div class="col-lg-4 col-md-12" style="min-height:450px;margin-bottom:10px;">                                
+                <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">                                
                         <div class="card" style="width:100%;height:fit-content">
-                                <img src="resources/hl.png" class="card-img-top" alt="..." width="30%" height="30%" style="margin:0 auto">
+                                <img src="resources/hackLogo.jpg" class="card-img-top" alt=""  width="10px"  height="200px" style="margin:0 auto;">
                                 <div class="card-body">
                                   <h5 class="card-title fredoka" style="color:black;text-align:center;">HourRank 31</h5>
                                   <p class="card-text">Join our 60 minutes coding challenge, HourRank 30, where the fastest coder wins!
@@ -192,11 +154,12 @@
                                         On December 2nd, at 7:00am PST, 3:00pm UTC, 8:30pm IST, you'll have 60 minutes to solve 3 challenges. The top 10 coders win HackerRank t-shirt.</p>
                                   <a href="#" class="btn btn-primary">Click here</a>
                                 </div>
-                        </div>                                  
+                        </div>  
+                      </div>                                
                 </div>    
-                <div class="col-lg-4 col-md-12" style="margin-bottom:10px;">                                
+                <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">                                
                         <div class="card" style="width:100%;height:fit-content">
-                                <img src="resources/hl.png" class="card-img-top" alt="..." width="30%" height="30%" style="margin:0 auto">
+                                <img src="resources/hackLogo.jpg" class="card-img-top" alt=""  width="10px"  height="200px" style="margin:0 auto;">
                                 <div class="card-body">
                                   <h5 class="card-title fredoka" style="color:black;text-align:center;">CodeAgon</h5>
                                   <p class="card-text">Join Codeagon and see how your coding skills compare against others! You’ll have 4 hours to solve algorithm challenges. Top 20 win 2 Lakhs in cash prizes. Top performing coders will win the opportunity to meet the CodeNation engineering team and interview for job opportunities. See you on the leaderboard!</p>
@@ -204,9 +167,9 @@
                                 </div>
                         </div>                                  
                 </div>    
-                <div class="col-lg-4 col-md-12" style="margin-bottom:10px;">                                
+                <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">                                
                         <div class="card" style="width:100%;height:fit-content">
-                                <img src="resources/hl.png" class="card-img-top" alt="..." width="30%" height="30%" style="margin:0 auto">
+                                <img src="resources/hackLogo.jpg" class="card-img-top" alt=""  width="10px"  height="200px" style="margin:0 auto;">
                                 <div class="card-body">
                                   <h5 class="card-title fredoka" style="color:black;text-align:center;">HourRank 14</h5>
                                   <p class="card-text">Join our 60 minutes coding challenge, HourRank 14, where the fastest coder wins!
@@ -219,9 +182,116 @@
             </div>
 
         </div>
-          
-        
+              
+              
+            </div>
+            <div class="col-lg-4 col-md-12">         
+            <h2 id="about" style="color:green;margin-top:0px;text-align:center;font-weight:bold;text-transform: uppercase;">About</h2>       
+              <!-- <h2  id="about" style="margin-top:-30px;color:goldenrod;text-align:center;font-weight:bold;text-transform: uppercase">About</h2> -->
+              <div style="overflow: scroll;max-height:500px;">
+          <div style="margin-bottom:15px;background-color: maroon;color:white;padding:30px;width:98%;margin: 15px auto;">
+            
+            <h4 class="fredoka" style="color:black;font-size:1.3em;">About</h4>
+            <p>
+                In a culture where everything is mediated through computers, it becomes mandatory to be literate in the 
+                ways that technology works. One way through which this can be achieved is by practicing programming.Coders Club aims 
+                to establish this programming culture on TCE campus, reaching every student who are passionate about coding.
+                 It also aims at building good programmers with great programming habits. The club’s motto is to Think-Code-Repeat.
+            </p>
 
+             <h4 class="fredoka" style="color:black;font-size:1.3em;">Motivation for the Club</h4>
+            <p>
+                    The seed of the club was shown by the Head of the Department with an objective of improving the core 
+                    placements of CSE students. It was then equipped by the final year students under the guidance of faculty 
+                    memberswho wanted to contribute their knowledge for the benefit of upcoming students and allow them to explore 
+                    the world of computer science. They are driven by their passion for coding and hunger to learn.                
+            </p>
+             <h4 class="fredoka" style="color:black;font-size:1.3em;">Objectives</h4>
+                <p>
+                    1.  To teach basics of programming as well as competitive programming to the students<br>
+                    2.  To inculcate competitive coding practice and to encourage competitive programming participation in the events like ACM ICPC, CodeChef challenges.<br>
+                    3.  To increase the number of students in leaderboard of coding sites like Hackerearth, Hackerrank.<br>
+                    4.  To conduct regular coding challenges within the college.<br>
+                </p>
+
+             <h4 class="fredoka" style="color:black;font-size:1.3em;">Monthly Activities</h4>
+                <p>    
+                    ● To conduct club meeting twice a month andsolve selective challenging problems in the coding sites/contest.<br>
+                    ● To host new problems in the web page which has to be solved within next meeting.<br>
+                    ● Invite Alumni and discuss the challenges in competitive programming contests through workshops.<br>                        
+                </p><br><br>        
+        </div>
+          </div>
+            </div>
+            <div class="col-lg-4 col-md-12" >
+              <div>
+                <h2 id="contests" style="color:green;margin-top:0px;text-align:center;font-weight:bold;text-transform: uppercase;">Leaderboard</h2>
+                  <div style="overflow:scroll;max-height:500px;font-family: 'Fresca', sans-serif !important;font-size: 1.2em;letter-spacing: 1.4px;">
+                    <div class="jumbotron" style="width:98%;margin:15px auto;padding:15px;background-color:maroon;height:fit-content;">
+                    <div class="row" style="text-align:center;">
+                            <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">                                
+                              <div class="card" style="width:100%;height:fit-content">
+                                      <div class="card-body">
+                                        <h5 class="card-title fredoka" style="color:black;text-align:center;">Hackerrank</h5>
+                                        <div class="card-text row">
+                                          <div class="col-12"><div class="row"><div class="col-8">CSCVENKATMADURAI</div><div class="col-4">2167.40</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">GOWTAHMCHANDRAS1</div><div class="col-4">2160.95</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">KARTHIKSELVA</div><div class="col-4">2048.22</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">SANKARANNATARAJ1</div><div class="col-4">1844.79</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">AMRISH KUMAR </div><div class="col-4">1780.57</div></div></div> 
+                                        </div>
+                                      </div>
+                              </div>  
+                            </div>                             
+                      <!-- </div>                                -->
+                      
+
+                       <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">                                
+                              <div class="card" style="width:100%;height:fit-content">
+                                      <div class="card-body">
+                                        <h5 class="card-title fredoka" style="color:black;text-align:center;">Geeks For Geeks</h5>
+                                        <div class="card-text row">
+                                            <div class="col-12"><div class="row"><div class="col-8">SRIRAM0111</div><div class="col-4">255</div></div></div>
+                                            <div class="col-12"><div class="row"><div class="col-8">AKASHM2</div><div class="col-4">202</div></div></div>
+                                            <div class="col-12"><div class="row"><div class="col-8">SUPRAJADINAKARAN</div><div class="col-4">173</div></div></div>
+                                            <div class="col-12"><div class="row"><div class="col-8">BHARGAVIRENGARAJAN</div><div class="col-4">148</div></div></div>
+                                            <div class="col-12"><div class="row"><div class="col-8">SRIRAM_</div><div class="col-4">116</div></div></div> 
+                                        </div>
+                                      </div>
+                              </div>  
+                            </div>                                      
+             <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">                                
+                              <div class="card" style="width:100%;height:fit-content">
+                                      <div class="card-body">
+                                        <h5 class="card-title fredoka" style="color:black;text-align:center;">CodeChef</h5>
+                                        <div class="card-text row">
+                                          <div class="col-12"><div class="row"><div class="col-8">SAMEEM78</div><div class="col-4">1913</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">GOMU</div><div class="col-4">1897</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">MANOJ_ZLATAN</div><div class="col-4">1817</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">SELVAMANI140 </div><div class="col-4">1740</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">JEYASURIYARS </div><div class="col-4">1699</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">RAAGHAV_</div><div class="col-4">1658</div></div></div>
+                                          <div class="col-12"><div class="row"><div class="col-8">SABAREESHKUMAR </div><div class="col-4">1623</div></div></div> 
+                                        </div>
+                                      </div>
+                              </div>  
+                            </div>  
+
+
+                      
+                    </div>
+                  </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div >
+            <footer style="background-color: black;height:200px">
+              
+            </footer>
+          </div>
       </div>
 
     <!-- Optional JavaScript -->
