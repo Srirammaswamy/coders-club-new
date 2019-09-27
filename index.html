@@ -45,7 +45,18 @@
       margin-top: -33px;
 
     }
-
+    /* .s{
+       position:relative;
+      overflow-y:auto; 
+      z-index: 2;
+    } */
+    .scrollContent{
+      position: relative;
+      top: 0;
+      z-index: 2;
+      /* max-height: 500px; */
+      animation: scroll 10s linear 1s infinite;
+    }
     .cimg {
       align-items: center;
       height: 500px;
@@ -56,6 +67,10 @@
 
     ::-webkit-scrollbar {
       width: 1px;
+    }
+
+    @keyframes scroll {
+	    100% { top: -100%; }
     }
   </style>
 </head>
@@ -114,15 +129,14 @@
 
 
 
-  <div id="carousel" class="carousel slide" data-ride="carousel">
+  <div id="carousel" class="carousel slide" data-ride="carousel" style="width:80%;margin:10px auto;">
     <ol class="carousel-indicators">
       <li data-target="#carousel" data-slide-to="0" class="active"></li>
       <li data-target="#carousel" data-slide-to="1"></li>
       <li data-target="#carousel" data-slide-to="2"></li>
     </ol>
     <br>
-    <div class="carousel-inner" role="listbox"
-      style="width:95%;height:100%;margin:10px auto;box-shadow: 5px 7px 8px grey;">
+    <div class="carousel-inner" role="listbox" style="box-shadow: 5px 7px 8px grey;height:500px">
       <div class="carousel-item active">
         <img class="cimg" src="resources/tce2.jpg" data-src="holder.js/900x500/auto/#777:#555/text:First slide"
           alt="First slide" width="100%">
@@ -150,14 +164,16 @@
 
 
   <div class="row" id="more">
-
+    
     <div class="col-lg-4 col-md-12 scroll" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">
       <h2 id="contests" style="color:green;margin-top:0px;text-align:center;font-weight:bold;text-transform:uppercase;">
         Contests</h2>
       <div style="overflow:scroll;max-height:500px;">
         <div class="jumbotron"
-          style="width:98%;margin:15px auto;padding:15px;background-color:maroon;height:fit-content;">
+          style="width:98%;margin:0 auto;padding:15px;background-color:maroon;height:fit-content;">
           <div class="row" style="height:100%;padding:15px;">
+              <div class="scrollContent">
+
             <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">
               <div class="card" style="width:100%;height:fit-content">
                 <img src="resources/hackLogo.jpg" class="card-img-top" alt="" width="10px" height="200px"
@@ -172,7 +188,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          
           <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">
             <div class="card" style="width:100%;height:fit-content">
               <img src="resources/hackLogo.jpg" class="card-img-top" alt="" width="10px" height="200px"
@@ -201,8 +217,9 @@
               </div>
             </div>
           </div>
+          </div>
         </div>
-
+        </div>
       </div>
 
 
@@ -212,7 +229,7 @@
         About</h2>
       <!-- <h2  id="about" style="margin-top:-30px;color:goldenrod;text-align:center;font-weight:bold;text-transform: uppercase">About</h2> -->
       <div style="overflow: scroll;max-height:500px;">
-        <div style="margin-bottom:15px;background-color: maroon;color:white;padding:30px;width:98%;margin: 15px auto;">
+        <div style="margin-bottom:15px;background-color: maroon;color:white;padding:30px;width:98%;margin: 0 auto; border-radius: 5px;">
 
           <h4 class="fredoka" style="color:black;font-size:1.3em;">About</h4>
           <p>
@@ -251,7 +268,12 @@
         </div>
       </div>
     </div>
+
+    <!-- leader board -->
+    
     <div class="col-lg-4 col-md-12" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1500">
+      <div> 
+      <!-- <div class="scrollContent"> -->
       <div>
         <h2 id="contests"
           style="color:green;margin-top:0px;text-align:center;font-weight:bold;text-transform: uppercase;">Leaderboard
@@ -259,8 +281,12 @@
         <div
           style="overflow:scroll;max-height:500px;font-family: 'Fresca', sans-serif !important;font-size: 1.2em;letter-spacing: 1.4px;">
           <div class="jumbotron"
-            style="width:98%;margin:15px auto;padding:15px;background-color:maroon;height:fit-content;">
+            style="width:98%;margin:0 auto;padding:15px;background-color:maroon;max-height:500px">
+            <div>
             <div class="row" style="text-align:center;">
+              <div>
+                <div class="scrollContent">
+
               <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">
                 <div class="card" style="width:100%;height:fit-content">
                   <div class="card-body">
@@ -296,6 +322,43 @@
                           <div class="col-4">1780.57</div>
                         </div>
                       </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">VASANTHAVANAN</div>
+                          <div class="col-4">1250</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">SIVA PRADEEP</div>
+                          <div class="col-4"></div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">KARTHIKA</div>
+                          <div class="col-4"></div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">RAHUL GANESH</div>
+                          <div class="col-4"></div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">SHANTHAN</div>
+                          <div class="col-4"></div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">NISHANTHAN</div>
+                          <div class="col-4"></div>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -396,11 +459,59 @@
 
 
 
+              <div class="col-lg-12 col-md-12" style="margin-bottom:10px;">
+                <div class="card" style="width:100%;height:fit-content">
+                  <div class="card-body">
+                    <h5 class="card-title fredoka" style="color:black;text-align:center;">Code Forces</h5>
+                    <div class="card-text row">
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">GOMU</div>
+                          <div class="col-4">1517</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">PRANEETH MARELLA</div>
+                          <div class="col-4">1227</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">RAJA MANICKAM</div>
+                          <div class="col-4">1212</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">RAAGHAVENDRA </div>
+                          <div class="col-4">1201</div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row">
+                          <div class="col-8">SETHU RAM KUMAR </div>
+                          <div class="col-4">1031</div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+            </div>
+            </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
+  </div> 
+  </div>
   </div>
 
 
